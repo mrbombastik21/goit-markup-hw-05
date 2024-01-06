@@ -719,10 +719,11 @@ portfolio-li:hover .overlay {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  padding: 72px 24px 24px 24px;
+  
 }
 
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -841,13 +842,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  border-color: transparent; transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: transparent; 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .texteria::placeholder {
   color: currentColor;
 }
+
 
 .texteria:focus {
   border-color: #4d5ae5;
@@ -879,7 +882,6 @@ letter-spacing: 0.04em;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4); 
-  flex-shrink: 0;
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -910,6 +912,7 @@ opacity: 1;
 }
 
 .privacy-btn {
+  
   min-width: 169px;
   height: 56px;
   justify-content: center;
@@ -925,6 +928,7 @@ opacity: 1;
   display: block;
   cursor: pointer;
   border: none;
+  margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
