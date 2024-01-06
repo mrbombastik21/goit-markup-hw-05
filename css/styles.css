@@ -420,7 +420,7 @@ margin-bottom: 8px;
 
 .social-link:hover,
 :focus{
-  background-color: #404bbf;
+  color: #404bbf;
   }
 
 
@@ -635,6 +635,62 @@ background-color: #31d0aa;
   height: 24px;
 }
 
+.footer-subscribe {
+  margin-left: auto;
+}
+
+.subscribe-text{
+  color: var(--WHITE, #FFF);
+margin-bottom: 16px;
+
+font-size: 16px;
+
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.01em;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.form-label {
+}
+.subscribe-input {
+  background: var(--NAVY-BLUE, #2E2F42);
+  width: 264px;
+height: 40px;
+flex-shrink: 0;
+padding: 8px 16px;
+outline: transparent;
+border-radius: 4px;
+border: 1px solid  #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-input::placeholder{
+ color: #ffffff;
+}
+
+
+.subscribe-btn {
+  display: flex;
+  color:  #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.04em;
+align-items: center;
+gap: 16px;
+padding: 8px 24px;
+border-radius: 4px;
+background-color: #4D5AE5;
+}
+.subscribe-icon {
+}
+
 /* Modal Window */
 
 .backdrop{
@@ -680,13 +736,11 @@ pointer-events: initial;
   align-items: center;
   min-width: 24px;
   height: 24px;
-  fill:#E7E9FC;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.10);
+  
 } 
 
 .x-close {
-
+ 
 }
 
 .modal-text {
@@ -712,15 +766,82 @@ pointer-events: initial;
 
 .form-field {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .form-input {
   width: 100%;
   height: 58px;
   border-radius: 4px;
-    border: 1px solid var rgba(46, 47, 66, 0.40);
+  padding-left: 38px;
+  outline: transparent;
+  transition: fill 300ms ease-in;
+}
+.form-input:focus{
+border-color: #4D5AE5;
+}
+
+.form-input:focus + .form-icon{
+  fill:  #4D5AE5;
 }
 
 .form-icon {
   position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: transparent;
+ fill:  #2E2F4266;
+transition: fill 300ms ease-in;
+}
+
+.modal-comment{
+  
+}
+
+.label-comment{
+
+}
+
+.privacy-div{
+  
+}
+.privacy-input{
+  
+}
+
+.policy-text{
+  
+  color:  #8E8F99;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+margin-left: 22px;
+}
+
+.modal-span{
+  color: var(--IRIS, #4D5AE5);
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+}
+
+.privacy-btn{
+  width: 169px;
+  justify-content: center;
+  color:  #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.03em;
+border-radius: 4px;
+background: #4D5AE5;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+display: inline-flex;
+padding: 16px 32px;
+align-items: flex-start;
+gap: 10px;
+margin-left: 71px;
 }
