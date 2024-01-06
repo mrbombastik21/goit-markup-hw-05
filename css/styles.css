@@ -717,9 +717,22 @@ portfolio-li:hover .overlay {
   align-items: center;
   min-width: 24px;
   height: 24px;
+ border-radius: 100%;
+ border: #E7E9FC;
+transition: 250ms ease-in;
 }
 
 .x-close {
+  color: #2E2F42;
+}
+
+.x-close:active{
+  color: #FFFFFF;
+}
+
+.modal-btn:active{
+  background-color: #404BBF;
+ 
 }
 
 .modal-text {
