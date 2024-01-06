@@ -903,10 +903,10 @@ letter-spacing: 0.04em;
 text-decoration-line: underline;
 }
 
-.policy-check:checked + .span-check{
+.policy-check:checked + .policy-label> .span-check{
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: #F4F4FD;
 }
 
 .policy-check:checked + .span-check> .policy-icon{
