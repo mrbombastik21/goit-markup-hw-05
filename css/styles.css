@@ -719,13 +719,14 @@ portfolio-li:hover .overlay {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
@@ -745,7 +746,7 @@ portfolio-li:hover .overlay {
   min-width: 24px;
   height: 24px;
  border-radius: 50%;
- border: 1px solid rgba(0, 0, 0, 1);
+ border: 1px solid rgba(0, 0, 0, 0.1);
 transition: 250ms ease-in;
 background-color: #e7e9fc;
 cursor: pointer;
@@ -908,15 +909,13 @@ text-decoration-line: underline;
 opacity: 1;
 }
 
-
-
 .privacy-btn {
   min-width: 169px;
   height: 56px;
   justify-content: center;
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto" s;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
